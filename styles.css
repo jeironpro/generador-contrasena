@@ -1,0 +1,108 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    align-items: center;
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+}
+
+.contenedor {
+    background: linear-gradient(to bottom, #0e396b, #05381e);
+    border-radius: 5px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 1);
+    margin: auto;
+    padding: 20px;
+    width: 450px;
+}
+
+h1 {
+    color: #fff;
+    text-align: center;
+    text-emphasis: dot;
+    margin: 0;
+    padding: 10px 0;
+}
+
+.contenedor-inbut {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.contenedor-inbut input {
+    background-color: transparent;
+    border: 2px solid #fff;
+    border-radius: 5px;
+    color: #fff;
+    height: 26px;
+    font-size: 15px;
+    font-weight: 600;
+    padding-left: 5px;
+    width: 250px;
+}
+
+.contenedor-inbut input::placeholder {
+    color: #fff;
+}
+
+.contenedor-inbut input:focus {
+    animation: pulsar 1s linear;
+    outline: none;
+    transition: all 0.5s ease;
+}
+
+@keyframes pulsar {
+    from {
+        transform:  scale(0.9);
+    }
+    
+    to {
+        transform: scale(1);
+    }
+    
+}
+
+.contenedor-inbut button {
+    background-color: #fff;
+    border: 2px solid #fff;
+    border-radius: 5px;
+    color: #020303;
+    height: 30px;
+    margin-left: 5px;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.contenedor-inbut button:hover {
+    background-color: #3593ff;
+}
+
+@media screen and (max-width: 500px) {
+    .contenedor {
+        margin-top: 250px;
+        width: 350px;
+    }
+
+    .contenedor h1 {
+        font-size: 25px;
+    }
+
+    .contenedor-inbut input {
+        height: 22px;
+        width: 170px;
+    }
+
+    .contenedor-inbut input:focus {
+        text-transform: lowercase;
+    }
+
+    .contenedor-inbut button {
+        font-size: 13px;
+        height: 34px;
+    }
+}
