@@ -1,4 +1,4 @@
-# generador-contrasena
+# web-generador-contrasena
 
 ## 📌 Descripción
 Este proyecto forma parte de mi portafolio personal.  
